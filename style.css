@@ -1,0 +1,68 @@
+  /* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+}
+body {
+    background-color:  #F3F5FC;
+    width: auto;
+    height: auto;
+}
+
+.logotipo {
+    position: relative;
+    left: 70px;
+    top: 40px;
+}
+
+.div-caixa{
+    padding-right: 0;
+}
+
+.div-caixa {
+    position: relative;
+    width: 680px;
+    height: 48px;
+    Top: 168px;
+    Left: 240px;
+    padding: 10px;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#caixa-texto .img1 {
+    position: relative;
+    width: 340px;
+    height: 500px;
+    left: 690px;
+    bottom: 225px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#descriptografado {
+    text-align: center;
+}
+#criptografar {
+    text-align: center;
+}
+
+.btn-cript{
+    position: relative;
+    top: 219px;
+    width: 138px;
+    background-color: blue;
+}
+
+.btn-descpt{
+    position: relative;
+    top: 200px;
+    width: 138px;
+    left: 280px;
+    background-color: blue;
+}
