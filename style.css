@@ -1,68 +1,102 @@
   /* Geral */
-* {
+  @import url('https://fonts.googleapis.com/css2? family= Open+Sans:ital,wdth,wght@0,100,400;1,91.3,488 & display=swap');
+  *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
-    color: #323232;
-    border: none;
-}
-body {
-    background-color:  #F3F5FC;
+    font-family: 'Rubik', sans-serif;
+  }
+
+
+  :root {
+    --corprincipal: rgb(211, 217, 241);
+    --corsecundaria: #F3F5FC;
+    --cortext: rgba(10, 56, 113, 1);
+  }
+
+  body{
+    background: var(--corprincipal);
+  }
+
+  .cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+  }
+
+  .cabecalho h1 {
+    color: var(--corsecundaria);
+  }
+
+  .cabecalho img{
+    max-width: 70px;
+    max-height: 70px;
     width: auto;
     height: auto;
-}
+  }
 
-.logotipo {
-    position: relative;
-    left: 70px;
-    top: 40px;
-}
-
-.div-caixa{
-    padding-right: 0;
-}
-
-.div-caixa {
-    position: relative;
-    width: 680px;
-    height: 48px;
-    Top: 168px;
-    Left: 240px;
-    padding: 10px;
-    border-radius: 20px;
+  .container-input{
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-}
+    padding: 2% 0 0 4%;
+  }
 
-#caixa-texto .img1 {
-    position: relative;
-    width: 340px;
-    height: 500px;
-    left: 690px;
-    bottom: 225px;
+  .container-input .input{
+    width: 400px;
+    height: 330px;
+  }
+
+  #input-text{
+    width: 345px;
+    height: 330px;
+    font-size: 20px;
+    color: var(--cortext);
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+
+  #output{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--corsecundaria);
+    border-radius: 20px;
+    width: 350px;
+    height: 480px;
+    margin-right: 3%;
+  }
+
+  #output img{
+    display: flex;
+    flex-direction: column;
+    border: auto;
+    border-radius: 20px;
+    width: 350px;
+    height: 480px;
+    margin-right: 4%;
+  }
+
+  .container-btn button{
+    border: 2px solid var(--cortext);
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 1);
-}
+    text-decoration: none;
+    color: blueviolet;
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    cursor: pointer;
+  }
 
-#descriptografado {
-    text-align: center;
-}
-#criptografar {
-    text-align: center;
-}
-
-.btn-cript{
-    position: relative;
-    top: 219px;
-    width: 138px;
-    background-color: blue;
-}
-
-.btn-descpt{
-    position: relative;
-    top: 200px;
-    width: 138px;
-    left: 280px;
-    background-color: blue;
-}
+  .btn-copiar{
+    border: 2px solid var(--cortext);
+    border-radius: 10px;
+    text-decoration: none;
+    color: blueviolet;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    cursor: pointer;
+  }

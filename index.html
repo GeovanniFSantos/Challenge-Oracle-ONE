@@ -8,27 +8,29 @@
     <title>Decodificador</title>
 </head>
 <body>
-    <header class="logotipo">
-        <img src="/Vector.png" alt="">
-    </header>
-    <div class="div-caixa">
-        <form id="formulario" action="form">
-            <input type="text" class="caixa" placeholder="Digite seu texto...">
 
-            <div class="btn-cript">
-                <input type="submit" id="criptografar" value="Criptografado">
-            </div>
+    <main class="main-container">
+        <header class="cabecalho">
+            <img src="/Vector.png" alt="logo alura">
+            <h1>Mensagens Codificadas</h1>
+        </header>
 
-            <div class="btn-descpt">
-                <input type="submit" id="descriptografado" value="Descriptografado">
+        <div class="container-input">
+            <div class="input">
+                <textarea name="" id="input-text" placeholder="Digite o Seu Texto..."></textarea>
             </div>
-        </form>
-       
-        <div id="caixa-texto">
-            <img class="img1" src="/1.PNG.png" alt="">
+            <div id="output">
+                <img src="/1.PNG.png" alt="">
+            </div>
         </div>
-        
-    </div>
+        <div class="buttons">
+            <div class="container-btn">
+                <button class="btn-cript">Criptografar</button>
+                <button class="btn-desript">Descriptografar</button>
+            </div>
+        </div>
+    </main>
 
+    <script src="Script.js"></script>
 </body>
 </html>
